@@ -2,20 +2,20 @@ export const PROFILE = {
   name: "BAHUWIMBUYE Rédempteur",
   title: "Statistician & Computer Scientist",
   subTitles: [
-    "Data Analyst & Manager",
-    "Information Management Specialist",
+    "Project Manager at ADE-Espoir",
+    "Data Analyst & Information Specialist",
     "Monitoring & Evaluation (M&E) Specialist",
     "Machine Learning & Digital Solutions"
   ],
   tagline: "Turning raw data into reliable information, actionable insights, and evidence-based decisions.",
-  summary: `I am a Statistician and Computer Scientist with over 10 years of international experience in database management, program evaluation (M&E), statistical analysis, and information systems development across Burundi, Tanzania, and Rwanda. Skilled in designing digital survey tools, ensuring data quality, and producing analytical reports for international organizations including IOM, IRC, PSI, FHI 360, UNHCR, UNFPA, and CARE International under major donor frameworks (PEPFAR, USRAP, EU, USAID).`,
+  summary: `I am a Statistician, Computer Scientist, and Project Manager with over 10 years of international experience in project leadership, database management, program evaluation (M&E), statistical analysis, and information systems development across Burundi, Tanzania, and Rwanda. Currently serving as Project Manager at ADE-Espoir (following the design and development of https://ade-espoir.org/), with extensive experience leading initiatives for international organizations including IOM, IRC, PSI, FHI 360, UNHCR, UNFPA, and CARE International under major donor frameworks (PEPFAR, USRAP, EU, USAID).`,
   yearsOfExperience: "10+",
   location: "Bujumbura, Burundi",
   contact: {
     email: "bahuwimbuyeredempteur@gmail.com",
     phone: "+257 79 939 288 / +257 68 67 00 96",
     linkedin: "https://linkedin.com/in/redempteur-bahuwimbuye",
-    github: "https://github.com/redempteur-bahuwimbuye",
+    github: "https://github.com/Redempteur/",
     whatsapp: "https://wa.me/25779939288",
   },
   cvFilename: "BAHUWIMBUYE_Redempteur_CV.pdf",
@@ -25,7 +25,7 @@ export const PROFILE = {
     { language: "Kirundi", level: "Native / Mother Tongue" },
     { language: "Kiswahili", level: "Fluent (Reading: 1, Speaking: 2, Writing: 2)" }
   ],
-  organizations: ["IOM", "IRC", "PSI", "FHI 360", "UNHCR", "UNFPA", "CARE International", "UNDP", "UNWFP", "EU", "PEPFAR", "USAID"],
+  organizations: ["ADE-Espoir", "IOM", "IRC", "PSI", "FHI 360", "UNHCR", "UNFPA", "CARE International", "UNDP", "UNWFP", "EU", "PEPFAR", "USAID"],
   lifecycleSteps: [
     {
       step: 1,

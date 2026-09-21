@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Download, BarChart2, ShieldCheck, Database, MapPin, Sparkles } from 'lucide-react';
 import { PROFILE } from '../data/profile';
 import { InteractiveDashboard } from '../components/InteractiveDashboard';
+import portraitImg from '../assets/Portrait_Red.jpeg';
 
 interface HeroSectionProps {
   onOpenCvModal: () => void;
@@ -110,7 +111,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCvModal }) => {
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <img
-                    src="/Portrait_Red.jpeg"
+                    src={portraitImg}
                     alt="BAHUWIMBUYE Rédempteur"
                     className="w-20 h-24 sm:w-24 sm:h-28 rounded-2xl object-cover border-2 border-sky-500/50 shadow-lg"
                   />

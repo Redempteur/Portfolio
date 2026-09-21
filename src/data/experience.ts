@@ -2,6 +2,26 @@ import { ExperienceItem } from '../types';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    id: "exp-ade-espoir",
+    period: "07/2025 – Present",
+    title: "Project Manager",
+    category: "ADE-Espoir (https://ade-espoir.org/)",
+    location: "Bujumbura, Burundi",
+    summary: "Leading project execution, institutional digital transformation, monitoring & evaluation frameworks, and strategic operations at ADE-Espoir following the development and launch of the official organizational web platform (https://ade-espoir.org/).",
+    responsibilities: [
+      "Designed and developed the official ADE-Espoir web portal (https://ade-espoir.org/) in June 2025 to centralize organizational communication, project reporting, and digital transparency.",
+      "Direct project planning, team management, resource allocation, and multi-stakeholder coordination across active organizational initiatives.",
+      "Implement M&E indicator tracking frameworks and data quality assurance protocols for project activities and beneficiary reach.",
+      "Oversee institutional information management systems, reporting workflows, and digital tools adoption for department leads.",
+      "Represent ADE-Espoir in strategic partner meetings, donor discussions, and steering committee presentations."
+    ],
+    impactHighlights: [
+      "Engineered and launched https://ade-espoir.org/, establishing a modern digital presence and institutional information repository.",
+      "Elevated project reporting timeliness and M&E indicator tracking compliance across organizational departments."
+    ],
+    skillsUsed: ["Project Management", "https://ade-espoir.org/", "Digital Transformation", "M&E Frameworks", "Information Systems", "Team Leadership"]
+  },
+  {
     id: "exp-iom",
     period: "07/2019 – 03/2025",
     title: "Data Processing Assistant / Officer",
@@ -12,7 +32,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Responsible for regular publication of clinic statistics and epidemiological summaries.",
       "Ensured rigorous quality control of medical clinic data for migrants and refugees.",
       "Managed database errors and conducted systematic follow-ups on medical records until final departure to resettlement countries.",
-      "Coordinated with clinic partner health institutions to track medical records and guarantee timely service payments."
+      "Coordinated with clinic partner health institutions to track records and guarantee timely service payments."
     ],
     impactHighlights: [
       "Maintained 100% data accuracy for thousands of migrant medical records under strict resettlement timelines.",

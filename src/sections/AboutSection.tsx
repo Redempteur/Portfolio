@@ -2,6 +2,7 @@ import React from 'react';
 import { PROFILE } from '../data/profile';
 import { DataLifecycleVisual } from '../components/DataLifecycleVisual';
 import { CheckCircle2, Award, Terminal, Cpu } from 'lucide-react';
+import portraitImg from '../assets/Portrait_Red.jpeg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -66,7 +67,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 rounded-3xl p-6 border border-slate-800 flex flex-col items-center justify-between text-center space-y-6">
             <div className="relative">
               <img
-                src="/Portrait_Red.jpeg"
+                src={portraitImg}
                 alt="BAHUWIMBUYE Rédempteur Portrait"
                 className="w-40 h-48 rounded-2xl object-cover border-2 border-sky-500/40 shadow-xl"
               />

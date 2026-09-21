@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
         f1Score: "91.1%"
       }
     },
-    githubUrl: "https://github.com/redempteur-bahuwimbuye/flood-vulnerability-analysis"
+    githubUrl: "https://github.com/Redempteur/flood-vulnerability-analysis"
   },
   {
     id: "project-02",
@@ -94,7 +94,8 @@ export const PROJECTS: Project[] = [
       initialErrors: 312,
       cleanedErrors: 0,
       qualityScore: "100%"
-    }
+    },
+    githubUrl: "https://github.com/Redempteur/"
   },
   {
     id: "project-03",
@@ -135,7 +136,8 @@ export const PROJECTS: Project[] = [
       targetReachRate: "98.2%",
       activeProjects: 14,
       onTrackIndicators: "20 / 20"
-    }
+    },
+    githubUrl: "https://github.com/Redempteur/"
   },
   {
     id: "project-04",
@@ -174,47 +176,50 @@ export const PROJECTS: Project[] = [
     demoData: {
       modules: ["Products & Batches", "Customers & Prospects", "Quotations & Orders", "Invoices & Payments", "Inventory & Stock", "Sales Analytics"],
       timeSaved: "75% Faster Processing"
-    }
+    },
+    githubUrl: "https://github.com/Redempteur/"
   },
   {
     id: "project-05",
-    title: "UNFPA & National Survey Information Systems",
+    title: "ADE-Espoir Information System & Web Platform",
     category: "Organizational Information Management",
-    tagline: "CSPro data entry forms, census tabulations, and SPSS statistical survey analysis.",
-    description: "A series of high-level national survey initiatives executed for UNFPA, PRODEMA, and the Burundi Census Bureau (BCR), encompassing the General Population Census (RGPH 2008), SPSR-2015 Follow-Up Survey, Vasectomy Survey, and Land Sector Review.",
-    technologies: ["CSPro 4.1 / 5.0", "SPSS", "UNFPA", "RGPH Census", "Sampling Adjustment", "Survey Design", "Statistical Tabulation"],
+    tagline: "Official web portal (https://ade-espoir.org/) development & Project Management leadership.",
+    description: "Designed, engineered, and launched the official organizational web portal (https://ade-espoir.org/) in June 2025 for ADE-Espoir, establishing a modern digital presence, institutional information structure, and M&E reporting matrix that led to appointment as Project Manager in July 2025.",
+    technologies: ["https://ade-espoir.org/", "Project Management", "Web Development", "Information Systems", "M&E Matrix", "Digital Transformation"],
     keyContributions: [
-      "Designed and finalized data entry forms in CSPro 4.1 and CSPro 5.0 for nationwide demographic and reproductive health surveys.",
-      "Trained data collectors, enumerators, and entry clerks across national survey sites.",
-      "Applied statistical adjustment techniques in SPSS for undercounts, overcounts, and sampling weights.",
-      "Overseed coding, entry, cleaning, and tabulation of data for the 2008 General Population and Housing Census (RGPH)."
+      "Architected and developed the official website https://ade-espoir.org/ in June 2025 to showcase organization projects, mission, and beneficiary impacts.",
+      "Appointed Project Manager in July 2025 to direct organizational project planning, execution, and M&E indicator tracking.",
+      "Formalized standardized operational procedure (SOP) manuals for data entry, file archiving, and quarterly reporting.",
+      "Established an integrated organizational M&E reporting matrix connecting field units with executive management."
     ],
     results: [
-      "Produced verified statistical tables and analytical reports for UNFPA, World Bank, and Burundi government publications.",
-      "Ensured zero data loss across multi-province field data entry operations.",
-      "Established standard CSPro survey templates adopted for national demographic studies."
+      "Successfully launched https://ade-espoir.org/, elevating organizational transparency and donor engagement.",
+      "Promoted to Project Manager (July 2025 – Present) leading multi-sectoral project execution.",
+      "Standardized quarterly reporting formats, ensuring 100% on-time submission to institutional partners."
     ],
     methodology: [
-      { label: "Survey Protocol", description: "Sampling design & questionnaire structuring" },
-      { label: "CSPro Mask Design", description: "Form engineering in CSPro 4.1 / 5.0" },
-      { label: "Field Enumerator Training", description: "Training data clerks & field supervisors" },
-      { label: "Data Entry Supervision", description: "Supervising multi-terminal data entry" },
-      { label: "SPSS Statistical Adjustments", description: "Weights, undercount adjustment & crosstabs" },
-      { label: "National Publication", description: "Final analytical tables & report dissemination" }
+      { label: "Web Portal Engineering", description: "Design & launch of https://ade-espoir.org/ in June 2025" },
+      { label: "Project Leadership", description: "Appointed Project Manager in July 2025" },
+      { label: "Structure & SOPs", description: "Defining roles, responsibilities & procedures" },
+      { label: "M&E Matrix", description: "Integrating reporting indicators & benchmarks" },
+      { label: "Digital Transition", description: "Migrating records to structured databases" },
+      { label: "Capacity Building", description: "Staff training & system adoption review" }
     ],
-    overview: "Demographic and reproductive health surveys form the bedrock of national development planning. This project collection demonstrates extensive mastery in large-scale survey data entry design and statistical analysis.",
-    problem: "Large-scale paper and digital surveys suffer from high risks of data entry error, field sampling bias, and complex statistical tabulation bottlenecks.",
+    overview: "Non-profit organizations and development projects require solid digital platforms and structured information management to sustain project growth and satisfy donor accountability requirements. This project delivered https://ade-espoir.org/ and project management leadership.",
+    problem: "Informal reporting channels, unstandardized file storage, and vague role definitions compromised operational transparency and hindered effective project monitoring.",
     objectives: [
-      "Design error-proof data entry screens in CSPro with automatic range and logic checks.",
-      "Train and supervise field teams to maintain high data entry fidelity.",
-      "Generate weighted, statistically sound summary tables for UN and government policy makers."
+      "Design and deploy a modern web portal (https://ade-espoir.org/) for public engagement and project visibility.",
+      "Formalize organizational structure, departmental roles, and information governance procedures.",
+      "Implement secure digital information management routines for sensitive beneficiary data."
     ],
-    approach: "Designed CSPro entry masks with strict validation logic, supervised entry clerks, executed data cleaning routines, and generated SPSS statistical crosstabs.",
+    approach: "Developed https://ade-espoir.org/, mapped organizational data flows, drafted operational procedure guidelines, configured digital record repositories, and assumed Project Manager leadership.",
     demoType: "org-system",
     demoData: {
-      departmentsMapped: 10,
-      proceduresStandardized: 22,
+      departmentsMapped: 6,
+      proceduresStandardized: 14,
       reportingCompliance: "100%"
-    }
+    },
+    liveUrl: "https://ade-espoir.org/",
+    githubUrl: "https://github.com/Redempteur/"
   }
 ];

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BarChart3, PieChart, TrendingUp, CheckCircle2, ShieldCheck, Database, Sliders, RefreshCw } from 'lucide-react';
+import { BarChart3, TrendingUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const InteractiveDashboard: React.FC = () => {
   const [selectedQuarter, setSelectedQuarter] = useState<'Q1' | 'Q2' | 'Q3' | 'Q4'>('Q3');
@@ -15,19 +15,19 @@ export const InteractiveDashboard: React.FC = () => {
   const current = sectorData[selectedSector] || sectorData['All Sectors'];
 
   return (
-    <div className="bg-slate-900/90 rounded-2xl border border-slate-700/80 shadow-2xl p-5 text-slate-100 font-sans">
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-700/80 shadow-2xl p-4 sm:p-5 text-slate-100 font-sans">
       
       {/* Widget Header */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-800">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center border border-sky-500/30">
+          <div className="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center border border-sky-500/30 shrink-0">
             <BarChart3 className="w-4 h-4" />
           </div>
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs font-bold text-white tracking-wide">M&E Executive Indicators Monitor</span>
               <span className="inline-flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded-full bg-teal-500/20 text-teal-400 border border-teal-500/30">
-                <ShieldCheck className="w-3 h-3" /> Live Demo Data
+                <ShieldCheck className="w-3 h-3" /> Live Demo
               </span>
             </div>
             <span className="text-[11px] text-slate-400 font-mono">Verified Indicator Dashboard Concept</span>
@@ -35,7 +35,7 @@ export const InteractiveDashboard: React.FC = () => {
         </div>
 
         {/* Filter Controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2 pt-1 sm:pt-0">
           <select
             value={selectedSector}
             onChange={(e) => setSelectedSector(e.target.value)}
@@ -65,7 +65,7 @@ export const InteractiveDashboard: React.FC = () => {
       </div>
 
       {/* KPI Cards Grid */}
-      <div className="grid grid-cols-3 gap-3 my-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-4">
         
         <div className="bg-slate-950/70 rounded-xl p-3 border border-slate-800/80">
           <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Target Beneficiaries</span>
@@ -94,8 +94,8 @@ export const InteractiveDashboard: React.FC = () => {
       </div>
 
       {/* Visual Chart Bars Representation */}
-      <div className="bg-slate-950/90 rounded-xl p-4 border border-slate-800 space-y-3">
-        <div className="flex items-center justify-between text-xs font-mono text-slate-400">
+      <div className="bg-slate-950/90 rounded-xl p-3.5 sm:p-4 border border-slate-800 space-y-3">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-mono text-slate-400">
           <span>Key Indicator Execution Progress ({selectedQuarter})</span>
           <span className="text-sky-400">Overall Score: 94.8%</span>
         </div>
@@ -103,8 +103,8 @@ export const InteractiveDashboard: React.FC = () => {
         <div className="space-y-2 text-xs">
           <div>
             <div className="flex justify-between text-[11px] text-slate-300 mb-1">
-              <span>Data Quality & Cleaning Protocols</span>
-              <span className="font-mono text-sky-400 font-bold">99.8%</span>
+              <span className="truncate pr-2">Data Quality & Cleaning Protocols</span>
+              <span className="font-mono text-sky-400 font-bold shrink-0">99.8%</span>
             </div>
             <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
               <div className="h-full bg-gradient-to-r from-sky-500 to-teal-400 rounded-full" style={{ width: '99.8%' }}></div>
@@ -113,8 +113,8 @@ export const InteractiveDashboard: React.FC = () => {
 
           <div>
             <div className="flex justify-between text-[11px] text-slate-300 mb-1">
-              <span>Beneficiary Mobile Data Collection (KoboToolbox)</span>
-              <span className="font-mono text-teal-400 font-bold">94.5%</span>
+              <span className="truncate pr-2">Beneficiary Mobile Surveys (KoboToolbox)</span>
+              <span className="font-mono text-teal-400 font-bold shrink-0">94.5%</span>
             </div>
             <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
               <div className="h-full bg-gradient-to-r from-teal-500 to-emerald-400 rounded-full" style={{ width: '94.5%' }}></div>
@@ -123,8 +123,8 @@ export const InteractiveDashboard: React.FC = () => {
 
           <div>
             <div className="flex justify-between text-[11px] text-slate-300 mb-1">
-              <span>Predictive Risk Classification (SMOTE + Decision Tree)</span>
-              <span className="font-mono text-cyan-400 font-bold">91.4%</span>
+              <span className="truncate pr-2">Predictive Risk Models (SMOTE + Tree)</span>
+              <span className="font-mono text-cyan-400 font-bold shrink-0">91.4%</span>
             </div>
             <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
               <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style={{ width: '91.4%' }}></div>

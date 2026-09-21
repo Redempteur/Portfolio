@@ -1,9 +1,35 @@
 import React from 'react';
-import { EDUCATION } from '../data/education';
 import { PROFILE } from '../data/profile';
-import { GraduationCap, BookOpen, CheckCircle2, Globe, UserCheck, Mail, Phone, Building2 } from 'lucide-react';
+import { GraduationCap, Globe, UserCheck, Mail, Phone, Building2, Award, CheckCircle2 } from 'lucide-react';
 
 export const EducationSection: React.FC = () => {
+  const educationSummary = [
+    {
+      degree: "Master's Degree — Software Engineering",
+      specialization: "Machine Learning / Data Mining / AI",
+      institution: "Université des Grands Lacs, Bujumbura",
+      period: "2022 – 2025"
+    },
+    {
+      degree: "Bachelor's Degree — Computer Science",
+      specialization: "Information Management & Mobile Programming",
+      institution: "Université des Grands Lacs, Bujumbura",
+      period: "2012 – 2016"
+    },
+    {
+      degree: "Bachelor's Degree — Applied Statistics for Economics",
+      specialization: "Statistics & Demography",
+      institution: "Université du Burundi, Bujumbura",
+      period: "2004 – 2008"
+    }
+  ];
+
+  const certificationsSummary = [
+    "Training in Monitoring and Evaluation — IOM (May 2021)",
+    "CISA Certificate — Enabel / Université Lumière (2018 – 2019)",
+    "Training in PHP & SQL Databases — NTSystem (Sep 2018)"
+  ];
+
   const references = [
     {
       name: "Mr. SINDAYAMAZE Guy Florin",
@@ -37,61 +63,74 @@ export const EducationSection: React.FC = () => {
 
   return (
     <section id="education" className="py-20 lg:py-28 bg-slate-900/40 text-slate-100 border-b border-slate-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-wider">
-            <span>Academic & Professional Credentials</span>
+            <span>Academic Background</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Education, Languages & References
           </h2>
           <p className="text-sm text-slate-400 font-sans leading-relaxed">
-            Formal degrees in Computer Science and Statistics, language proficiencies, and verified institutional references.
+            Academic degrees in Software Engineering and Applied Statistics, language proficiencies, and institutional references.
           </p>
         </div>
 
-        {/* Education Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {EDUCATION.map((item, idx) => (
-            <div
-              key={idx}
-              className={`rounded-3xl p-6 sm:p-8 border transition-all flex flex-col justify-between space-y-6 ${
-                item.isMain
-                  ? 'bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border-sky-500/40 shadow-xl'
-                  : 'bg-slate-950/80 border-slate-800'
-              }`}
-            >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className={`p-3 rounded-2xl border ${item.isMain ? 'bg-sky-500/20 text-sky-400 border-sky-500/30' : 'bg-slate-900 text-slate-400 border-slate-800'}`}>
-                    {item.isMain ? <GraduationCap className="w-6 h-6" /> : <BookOpen className="w-6 h-6" />}
-                  </div>
-                  <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-slate-900 text-teal-400 border border-slate-800">
-                    {item.status}
-                  </span>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-extrabold text-white tracking-tight leading-snug">{item.degree}</h3>
-                  <p className="text-xs font-mono text-sky-400 mt-1">{item.field}</p>
-                  <p className="text-xs text-slate-400 mt-0.5">{item.institution}</p>
-                </div>
-
-                <p className="text-xs text-slate-300 leading-relaxed font-sans pt-3 border-t border-slate-800/80 whitespace-pre-line">
-                  {item.details}
-                </p>
+        {/* Compact Education & Certifications Summary */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          {/* Degrees Summary */}
+          <div className="lg:col-span-7 bg-slate-950/90 rounded-3xl p-6 sm:p-8 border border-slate-800 space-y-6">
+            <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
+              <div className="p-3 rounded-2xl bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                <GraduationCap className="w-5 h-5" />
               </div>
-
-              <div className="pt-3 border-t border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span>Verified Qualification</span>
-                <span className="text-emerald-400 flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Authenticated
-                </span>
+              <div>
+                <h3 className="text-lg font-extrabold text-white">Education Summary</h3>
+                <p className="text-xs text-slate-400 font-mono">Degrees in Computer Science & Applied Statistics</p>
               </div>
             </div>
-          ))}
+
+            <div className="space-y-4">
+              {educationSummary.map((item, idx) => (
+                <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-4 rounded-2xl bg-slate-900 border border-slate-800/80">
+                  <div className="space-y-1">
+                    <h4 className="text-sm font-bold text-white leading-snug">{item.degree}</h4>
+                    <p className="text-xs font-mono text-sky-400">{item.specialization}</p>
+                    <p className="text-xs text-slate-400">{item.institution}</p>
+                  </div>
+                  <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-slate-950 text-teal-400 border border-slate-800 w-fit shrink-0">
+                    {item.period}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications Summary */}
+          <div className="lg:col-span-5 bg-slate-950/90 rounded-3xl p-6 sm:p-8 border border-slate-800 space-y-6">
+            <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
+              <div className="p-3 rounded-2xl bg-teal-500/20 text-teal-400 border border-teal-500/30">
+                <Award className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-lg font-extrabold text-white">Professional Certifications</h3>
+                <p className="text-xs text-slate-400 font-mono">Specialized M&E, CISA & DB Systems</p>
+              </div>
+            </div>
+
+            <div className="space-y-3 font-sans text-xs">
+              {certificationsSummary.map((cert, idx) => (
+                <div key={idx} className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800/80 text-slate-200">
+                  <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                  <span>{cert}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
 
         {/* Language Skills */}
